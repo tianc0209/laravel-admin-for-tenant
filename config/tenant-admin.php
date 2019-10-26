@@ -60,7 +60,7 @@ return [
 
         'prefix' => env('ADMIN_ROUTE_PREFIX', 'admin'),
 
-        'namespace' => 'App\\Admin\\Controllers',
+        'namespace' => 'App\\TenantAdmin\\Controllers',
 
         'middleware' => ['web', 'admin'],
     ],
@@ -259,7 +259,7 @@ return [
     | Supported: "tencent", "google", "yandex".
     |
     */
-    'map_provider' => 'google',
+    'map_provider' => 'tencent',
 
     /*
     |--------------------------------------------------------------------------

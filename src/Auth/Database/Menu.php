@@ -7,7 +7,7 @@ use Tianc\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Facades\DB;
-
+use Hyn\Tenancy\Traits\UsesTenantConnection;
 /**
  * Class Menu.
  *
@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\DB;
  */
 class Menu extends Model
 {
-    use AdminBuilder, ModelTree {
+    use AdminBuilder,UsesTenantConnection, ModelTree {
         ModelTree::boot as treeBoot;
     }
 

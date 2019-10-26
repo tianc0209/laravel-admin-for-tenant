@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-
+use Hyn\Tenancy\Traits\UsesTenantConnection;
 class Permission extends Model
 {
+    use UsesTenantConnection;
     /**
      * @var array
      */

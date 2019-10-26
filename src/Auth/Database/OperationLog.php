@@ -4,9 +4,10 @@ namespace Tianc\Admin\Auth\Database;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-
+use Hyn\Tenancy\Traits\UsesTenantConnection;
 class OperationLog extends Model
 {
+    use UsesTenantConnection;
     protected $fillable = ['user_id', 'path', 'method', 'ip', 'input'];
 
     public static $methodColors = [

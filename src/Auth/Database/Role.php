@@ -4,9 +4,10 @@ namespace Tianc\Admin\Auth\Database;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-
+use Hyn\Tenancy\Traits\UsesTenantConnection;
 class Role extends Model
 {
+    use UsesTenantConnection;
     protected $fillable = ['name', 'slug'];
 
     /**

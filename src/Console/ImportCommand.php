@@ -13,7 +13,7 @@ class ImportCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'admin:import {extension?}';
+    protected $signature = 'tenant-admin:import {extension?}';
 
     /**
      * The console command description.

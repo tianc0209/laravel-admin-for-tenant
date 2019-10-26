@@ -13,7 +13,7 @@ class MakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'admin:make {name} 
+    protected $signature = 'tenant-admin:make {name} 
         {--model=} 
         {--title=} 
         {--stub= : Path to the custom stub file. } 

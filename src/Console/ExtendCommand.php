@@ -13,7 +13,7 @@ class ExtendCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'admin:extend {extension} {--namespace=}';
+    protected $signature = 'tenant-admin:extend {extension} {--namespace=}';
 
     /**
      * The console command description.

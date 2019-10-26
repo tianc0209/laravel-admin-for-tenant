@@ -15,7 +15,7 @@ class MinifyCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'admin:minify {--clear}';
+    protected $signature = 'tenant-admin:minify {--clear}';
 
     /**
      * The console command description.

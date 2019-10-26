@@ -11,7 +11,7 @@ class UninstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'admin:uninstall';
+    protected $signature = 'tenant-admin:uninstall';
 
     /**
      * The console command description.
@@ -45,6 +45,6 @@ class UninstallCommand extends Command
     {
         $this->laravel['files']->deleteDirectory(config('tenant-admin.directory'));
         $this->laravel['files']->deleteDirectory(public_path('vendor/laravel-admin/'));
-        $this->laravel['files']->delete(config_path('admin.php'));
+        $this->laravel['files']->delete(config_path('tenant-admin.php'));
     }
 }

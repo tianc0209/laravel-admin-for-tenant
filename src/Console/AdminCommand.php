@@ -14,7 +14,7 @@ class AdminCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'admin';
+    protected $signature = 'tenant-admin';
 
     /**
      * The console command description.
@@ -50,14 +50,14 @@ LOGO;
     }
 
     /**
-     * List all admin commands.
+     * List all tenant-admin commands.
      *
      * @return void
      */
     protected function listAdminCommands()
     {
         $commands = collect(Artisan::all())->mapWithKeys(function ($command, $key) {
-            if (Str::startsWith($key, 'admin:')) {
+            if (Str::startsWith($key, 'tenant-admin:')) {
                 return [$key => $command];
             }
 

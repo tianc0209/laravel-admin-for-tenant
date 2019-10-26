@@ -12,7 +12,7 @@ class ActionCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'admin:action {name}
+    protected $signature = 'tenant-admin:action {name}
         {--grid-batch}
         {--grid-row}
         {--form}

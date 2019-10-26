@@ -18,7 +18,7 @@ class InstallTest extends TestCase
 
         $this->assertFileExists(admin_path('Controllers/ExampleController.php'));
 
-        $this->assertFileExists(config_path('admin.php'));
+        $this->assertFileExists(config_path('tenant-admin.php'));
 
         $this->assertFileExists(public_path('vendor/laravel-admin'));
     }

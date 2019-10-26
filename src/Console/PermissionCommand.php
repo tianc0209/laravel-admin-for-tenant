@@ -14,7 +14,7 @@ class PermissionCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'admin:permissions {--tables=}';
+    protected $signature = 'tenant-admin:permissions {--tables=}';
 
     /**
      * The console command description.

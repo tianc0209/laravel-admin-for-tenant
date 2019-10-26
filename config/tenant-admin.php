@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Laravel-admin',
+    'name' => 'Laravel-admin-for-tenant',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Laravel</b> admin',
+    'logo' => '<b>Laravel</b> admin for tenant',
 
     /*
     |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ return [
     | This value is the path of laravel-admin bootstrap file.
     |
     */
-    'bootstrap' => app_path('Admin/bootstrap.php'),
+    'bootstrap' => app_path('TenantAdmin/bootstrap.php'),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +75,7 @@ return [
     | be set before running `artisan admin::install` to take effect.
     |
     */
-    'directory' => app_path('Admin'),
+    'directory' => app_path('TenantAdmin'),
 
     /*
     |--------------------------------------------------------------------------
@@ -85,7 +85,7 @@ return [
     | Html title for all pages.
     |
     */
-    'title' => 'Admin',
+    'title' => 'TenantAdmin',
 
     /*
     |--------------------------------------------------------------------------

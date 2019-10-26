@@ -100,10 +100,10 @@ class AdminServiceProvider extends ServiceProvider
     protected function registerPublishing()
     {
         if ($this->app->runningInConsole()) {
-            $this->publishes([__DIR__.'/../config' => config_path()], 'laravel-admin-config');
-            $this->publishes([__DIR__.'/../resources/lang' => resource_path('lang')], 'laravel-admin-lang');
-            $this->publishes([__DIR__.'/../database/migrations' => database_path('migrations')], 'laravel-admin-migrations');
-            $this->publishes([__DIR__.'/../resources/assets' => public_path('vendor/laravel-admin')], 'laravel-admin-assets');
+            $this->publishes([__DIR__.'/../config' => config_path()], 'laravel-tenant-admin-config');
+            $this->publishes([__DIR__.'/../resources/lang' => resource_path('lang')], 'laravel-tenant-admin-lang');
+            $this->publishes([__DIR__.'/../database/migrations' => database_path('migrations')], 'laravel-tenant-admin-migrations');
+            $this->publishes([__DIR__.'/../resources/assets' => public_path('vendor/laravel-admin')], 'laravel-tenant-admin-assets');
         }
     }
 

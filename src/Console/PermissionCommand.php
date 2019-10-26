@@ -87,15 +87,15 @@ class PermissionCommand extends Command
     private function getIgnoreTables()
     {
         return [
-            config('admin.database.users_table'),
-            config('admin.database.roles_table'),
-            config('admin.database.permissions_table'),
-            config('admin.database.menu_table'),
-            config('admin.database.operation_log_table'),
-            config('admin.database.user_permissions_table'),
-            config('admin.database.role_users_table'),
-            config('admin.database.role_permissions_table'),
-            config('admin.database.role_menu_table'),
+            config('tenant-admin.database.users_table'),
+            config('tenant-admin.database.roles_table'),
+            config('tenant-admin.database.permissions_table'),
+            config('tenant-admin.database.menu_table'),
+            config('tenant-admin.database.operation_log_table'),
+            config('tenant-admin.database.user_permissions_table'),
+            config('tenant-admin.database.role_users_table'),
+            config('tenant-admin.database.role_permissions_table'),
+            config('tenant-admin.database.role_menu_table'),
         ];
     }
 

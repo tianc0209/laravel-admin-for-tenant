@@ -25,7 +25,7 @@ class Permission
      */
     public function handle(Request $request, \Closure $next, ...$args)
     {
-        if (config('admin.check_route_permission') === false) {
+        if (config('tenant-admin.check_route_permission') === false) {
             return $next($request);
         }
 
@@ -84,7 +84,7 @@ class Permission
      */
     protected function shouldPassThrough($request)
     {
-        $excepts = config('admin.auth.excepts', [
+        $excepts = config('tenant-admin.auth.excepts', [
             'auth/login',
             'auth/logout',
         ]);

@@ -95,7 +95,7 @@ trait UploadField
      */
     protected function initStorage()
     {
-        $this->disk(config('admin.upload.disk'));
+        $this->disk(config('tenant-admin.upload.disk'));
     }
 
     /**
@@ -420,7 +420,7 @@ trait UploadField
             return $this->storage->url($path);
         }
 
-        return Storage::disk(config('admin.upload.disk'))->url($path);
+        return Storage::disk(config('tenant-admin.upload.disk'))->url($path);
     }
 
     /**

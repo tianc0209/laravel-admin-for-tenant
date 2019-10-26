@@ -5,9 +5,9 @@ use Illuminate\Routing\Router;
 Admin::routes();
 
 Route::group([
-    'prefix'        => config('admin.route.prefix'),
-    'namespace'     => config('admin.route.namespace'),
-    'middleware'    => config('admin.route.middleware'),
+    'prefix'        => config('tenant-admin.route.prefix'),
+    'namespace'     => config('tenant-admin.route.namespace'),
+    'middleware'    => config('tenant-admin.route.middleware'),
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('admin.home');

@@ -48,7 +48,7 @@ trait HasActions
             return $this->actionsClass;
         }
 
-        if ($class = config('admin.grid_action_class')) {
+        if ($class = config('tenant-admin.grid_action_class')) {
             return $class;
         }
 

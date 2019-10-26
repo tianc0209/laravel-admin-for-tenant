@@ -13,7 +13,7 @@ if (!function_exists('admin_path')) {
      */
     function admin_path($path = '')
     {
-        return ucfirst(config('admin.directory')).($path ? DIRECTORY_SEPARATOR.$path : $path);
+        return ucfirst(config('tenant-admin.directory')).($path ? DIRECTORY_SEPARATOR.$path : $path);
     }
 }
 
@@ -33,7 +33,7 @@ if (!function_exists('admin_url')) {
             return $path;
         }
 
-        $secure = $secure ?: (config('admin.https') || config('admin.secure'));
+        $secure = $secure ?: (config('tenant-admin.https') || config('tenant-admin.secure'));
 
         return url(admin_base_path($path), $parameters, $secure);
     }
@@ -49,7 +49,7 @@ if (!function_exists('admin_base_path')) {
      */
     function admin_base_path($path = '')
     {
-        $prefix = '/'.trim(config('admin.route.prefix'), '/');
+        $prefix = '/'.trim(config('tenant-admin.route.prefix'), '/');
 
         $prefix = ($prefix == '/') ? '' : $prefix;
 
@@ -148,7 +148,7 @@ if (!function_exists('admin_asset')) {
      */
     function admin_asset($path)
     {
-        return (config('admin.https') || config('admin.secure')) ? secure_asset($path) : asset($path);
+        return (config('tenant-admin.https') || config('tenant-admin.secure')) ? secure_asset($path) : asset($path);
     }
 }
 

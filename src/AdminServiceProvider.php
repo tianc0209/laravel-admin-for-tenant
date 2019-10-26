@@ -86,7 +86,7 @@ class AdminServiceProvider extends ServiceProvider
      */
     protected function ensureHttps()
     {
-        if (config('admin.https') || config('admin.secure')) {
+        if (config('tenant-admin.https') || config('tenant-admin.secure')) {
             url()->forceScheme('https');
             $this->app['request']->server->set('HTTPS', true);
         }
@@ -142,7 +142,7 @@ class AdminServiceProvider extends ServiceProvider
      */
     protected function loadAdminAuthConfig()
     {
-        config(Arr::dot(config('admin.auth', []), 'auth.'));
+        config(Arr::dot(config('tenant-admin.auth', []), 'auth.'));
     }
 
     /**

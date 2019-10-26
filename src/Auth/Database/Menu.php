@@ -35,11 +35,11 @@ class Menu extends Model
      */
     public function __construct(array $attributes = [])
     {
-        $connection = config('admin.database.connection') ?: config('database.default');
+        $connection = config('tenant-admin.database.connection') ?: config('database.default');
 
         $this->setConnection($connection);
 
-        $this->setTable(config('admin.database.menu_table'));
+        $this->setTable(config('tenant-admin.database.menu_table'));
 
         parent::__construct($attributes);
     }
@@ -51,9 +51,9 @@ class Menu extends Model
      */
     public function roles(): BelongsToMany
     {
-        $pivotTable = config('admin.database.role_menu_table');
+        $pivotTable = config('tenant-admin.database.role_menu_table');
 
-        $relatedModel = config('admin.database.roles_model');
+        $relatedModel = config('tenant-admin.database.roles_model');
 
         return $this->belongsToMany($relatedModel, $pivotTable, 'menu_id', 'role_id');
     }
@@ -63,14 +63,14 @@ class Menu extends Model
      */
     public function allNodes(): array
     {
-        $connection = config('admin.database.connection') ?: config('database.default');
+        $connection = config('tenant-admin.database.connection') ?: config('database.default');
         $orderColumn = DB::connection($connection)->getQueryGrammar()->wrap($this->orderColumn);
 
         $byOrder = 'ROOT ASC,'.$orderColumn;
 
         $query = static::query();
 
-        if (config('admin.check_menu_roles') !== false) {
+        if (config('tenant-admin.check_menu_roles') !== false) {
             $query->with('roles');
         }
 
@@ -84,7 +84,7 @@ class Menu extends Model
      */
     public function withPermission()
     {
-        return (bool) config('admin.menu_bind_permission');
+        return (bool) config('tenant-admin.menu_bind_permission');
     }
 
     /**

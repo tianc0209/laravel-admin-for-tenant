@@ -27,11 +27,11 @@ class Administrator extends Model implements AuthenticatableContract
      */
     public function __construct(array $attributes = [])
     {
-        $connection = config('admin.database.connection') ?: config('database.default');
+        $connection = config('tenant-admin.database.connection') ?: config('database.default');
 
         $this->setConnection($connection);
 
-        $this->setTable(config('admin.database.users_table'));
+        $this->setTable(config('tenant-admin.database.users_table'));
 
         parent::__construct($attributes);
     }
@@ -49,13 +49,13 @@ class Administrator extends Model implements AuthenticatableContract
             return $avatar;
         }
 
-        $disk = config('admin.upload.disk');
+        $disk = config('tenant-admin.upload.disk');
 
         if ($avatar && array_key_exists($disk, config('filesystems.disks'))) {
-            return Storage::disk(config('admin.upload.disk'))->url($avatar);
+            return Storage::disk(config('tenant-admin.upload.disk'))->url($avatar);
         }
 
-        $default = config('admin.default_avatar') ?: '/vendor/laravel-admin/AdminLTE/dist/img/user2-160x160.jpg';
+        $default = config('tenant-admin.default_avatar') ?: '/vendor/laravel-admin/AdminLTE/dist/img/user2-160x160.jpg';
 
         return admin_asset($default);
     }
@@ -67,9 +67,9 @@ class Administrator extends Model implements AuthenticatableContract
      */
     public function roles() : BelongsToMany
     {
-        $pivotTable = config('admin.database.role_users_table');
+        $pivotTable = config('tenant-admin.database.role_users_table');
 
-        $relatedModel = config('admin.database.roles_model');
+        $relatedModel = config('tenant-admin.database.roles_model');
 
         return $this->belongsToMany($relatedModel, $pivotTable, 'user_id', 'role_id');
     }
@@ -81,9 +81,9 @@ class Administrator extends Model implements AuthenticatableContract
      */
     public function permissions() : BelongsToMany
     {
-        $pivotTable = config('admin.database.user_permissions_table');
+        $pivotTable = config('tenant-admin.database.user_permissions_table');
 
-        $relatedModel = config('admin.database.permissions_model');
+        $relatedModel = config('tenant-admin.database.permissions_model');
 
         return $this->belongsToMany($relatedModel, $pivotTable, 'user_id', 'permission_id');
     }

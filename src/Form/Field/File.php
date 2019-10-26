@@ -49,7 +49,7 @@ class File extends Field
      */
     public function defaultDirectory()
     {
-        return config('admin.upload.directory.file');
+        return config('tenant-admin.upload.directory.file');
     }
 
     /**

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{config('admin.title')}} | {{ trans('admin.login') }}</title>
+  <title>{{config('tenant-admin.title')}} | {{ trans('admin.login') }}</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   
@@ -27,10 +27,10 @@
   <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition login-page" @if(config('admin.login_background_image'))style="background: url({{config('admin.login_background_image')}}) no-repeat;background-size: cover;"@endif>
+<body class="hold-transition login-page" @if(config('tenant-admin.login_background_image'))style="background: url({{config('tenant-admin.login_background_image')}}) no-repeat;background-size: cover;"@endif>
 <div class="login-box">
   <div class="login-logo">
-    <a href="{{ admin_url('/') }}"><b>{{config('admin.name')}}</b></a>
+    <a href="{{ admin_url('/') }}"><b>{{config('tenant-admin.name')}}</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -61,7 +61,7 @@
       </div>
       <div class="row">
         <div class="col-xs-8">
-          @if(config('admin.auth.remember'))
+          @if(config('tenant-admin.auth.remember'))
           <div class="checkbox icheck">
             <label>
               <input type="checkbox" name="remember" value="1" {{ (!old('username') || old('remember')) ? 'checked' : '' }}>

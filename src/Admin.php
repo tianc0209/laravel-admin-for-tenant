@@ -167,7 +167,7 @@ class Admin
             return $this->menu;
         }
 
-        $menuClass = config('admin.database.menu_model');
+        $menuClass = config('tenant-admin.database.menu_model');
 
         /** @var Menu $menuModel */
         $menuModel = new $menuClass();
@@ -218,7 +218,7 @@ class Admin
      */
     public function title()
     {
-        return self::$metaTitle ? self::$metaTitle : config('admin.title');
+        return self::$metaTitle ? self::$metaTitle : config('tenant-admin.title');
     }
 
     /**
@@ -252,7 +252,7 @@ class Admin
      */
     public function guard()
     {
-        $guard = config('admin.auth.guard') ?: 'admin';
+        $guard = config('tenant-admin.auth.guard') ?: 'admin';
 
         return Auth::guard($guard);
     }
@@ -307,8 +307,8 @@ class Admin
     public function routes()
     {
         $attributes = [
-            'prefix'     => config('admin.route.prefix'),
-            'middleware' => config('admin.route.middleware'),
+            'prefix'     => config('tenant-admin.route.prefix'),
+            'middleware' => config('tenant-admin.route.middleware'),
         ];
 
         app('router')->group($attributes, function ($router) {
@@ -327,7 +327,7 @@ class Admin
                 $router->post('_handle_action_', 'HandleController@handleAction')->name('admin.handle-action');
             });
 
-            $authController = config('admin.auth.controller', AuthController::class);
+            $authController = config('tenant-admin.auth.controller', AuthController::class);
 
             /* @var \Illuminate\Routing\Router $router */
             $router->get('auth/login', $authController.'@getLogin')->name('admin.login');
@@ -374,7 +374,7 @@ class Admin
     {
         $this->fireBootingCallbacks();
 
-        require config('admin.bootstrap', admin_path('bootstrap.php'));
+        require config('tenant-admin.bootstrap', admin_path('bootstrap.php'));
 
         $this->addAdminAssets();
 

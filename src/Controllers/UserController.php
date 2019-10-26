@@ -23,7 +23,7 @@ class UserController extends AdminController
      */
     protected function grid()
     {
-        $userModel = config('admin.database.users_model');
+        $userModel = config('tenant-admin.database.users_model');
 
         $grid = new Grid(new $userModel());
 
@@ -58,7 +58,7 @@ class UserController extends AdminController
      */
     protected function detail($id)
     {
-        $userModel = config('admin.database.users_model');
+        $userModel = config('tenant-admin.database.users_model');
 
         $show = new Show($userModel::findOrFail($id));
 
@@ -84,14 +84,14 @@ class UserController extends AdminController
      */
     public function form()
     {
-        $userModel = config('admin.database.users_model');
-        $permissionModel = config('admin.database.permissions_model');
-        $roleModel = config('admin.database.roles_model');
+        $userModel = config('tenant-admin.database.users_model');
+        $permissionModel = config('tenant-admin.database.permissions_model');
+        $roleModel = config('tenant-admin.database.roles_model');
 
         $form = new Form(new $userModel());
 
-        $userTable = config('admin.database.users_table');
-        $connection = config('admin.database.connection');
+        $userTable = config('tenant-admin.database.users_table');
+        $connection = config('tenant-admin.database.connection');
 
         $form->display('id', 'ID');
         $form->text('username', trans('admin.username'))

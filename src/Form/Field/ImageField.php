@@ -31,7 +31,7 @@ trait ImageField
      */
     public function defaultDirectory()
     {
-        return config('admin.upload.directory.image');
+        return config('tenant-admin.upload.directory.image');
     }
 
     /**

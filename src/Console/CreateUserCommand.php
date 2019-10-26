@@ -25,8 +25,8 @@ class CreateUserCommand extends Command
      */
     public function handle()
     {
-        $userModel = config('admin.database.users_model');
-        $roleModel = config('admin.database.roles_model');
+        $userModel = config('tenant-admin.database.users_model');
+        $roleModel = config('tenant-admin.database.roles_model');
 
         $username = $this->ask('Please enter a username to login');
 

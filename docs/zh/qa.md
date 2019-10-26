@@ -38,7 +38,7 @@ Admin::css('path/to/your/js');
 
 ```php
 Route::group([
-    'prefix'        => config('admin.prefix'),
+    'prefix'        => config('tenant-admin.prefix'),
     'namespace'     => Admin::controllerNamespace(),
     'middleware'    => ['web', 'admin'],
 ], function (Router $router) {

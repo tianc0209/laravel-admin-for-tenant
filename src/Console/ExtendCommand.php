@@ -73,7 +73,7 @@ class ExtendCommand extends Command
     {
         $this->filesystem = $filesystem;
 
-        $this->extensionDir = config('admin.extension_dir');
+        $this->extensionDir = config('tenant-admin.extension_dir');
 
         InputExtensionDir:
         if (empty($this->extensionDir)) {

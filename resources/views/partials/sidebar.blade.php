@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        @if(config('admin.enable_menu_search'))
+        @if(config('tenant-admin.enable_menu_search'))
         <!-- search form (Optional) -->
         <form class="sidebar-form" style="overflow: initial;" onsubmit="return false;">
             <div class="input-group">

@@ -23,9 +23,9 @@
 
 </head>
 
-<body class="hold-transition {{config('admin.skin')}} {{join(' ', config('admin.layout'))}}">
+<body class="hold-transition {{config('tenant-admin.skin')}} {{join(' ', config('tenant-admin.layout'))}}">
 
-@if($alert = config('admin.top_alert'))
+@if($alert = config('tenant-admin.top_alert'))
     <div style="text-align: center;padding: 5px;font-size: 12px;background-color: #ffffd5;color: #ff0000;">
         {!! $alert !!}
     </div>

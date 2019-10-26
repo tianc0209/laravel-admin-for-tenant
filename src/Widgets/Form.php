@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Widgets;
+namespace Tianc\Admin\Widgets;
 
 use Closure;
-use Encore\Admin\Form as BaseForm;
-use Encore\Admin\Form\Field;
+use Tianc\Admin\Form as BaseForm;
+use Tianc\Admin\Form\Field;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;

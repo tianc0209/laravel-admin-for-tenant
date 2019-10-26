@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Layout;
+namespace Tianc\Admin\Layout;
 
 interface Buildable
 {

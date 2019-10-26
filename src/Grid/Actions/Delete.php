@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Actions;
+namespace Tianc\Admin\Grid\Actions;
 
-use Encore\Admin\Actions\Response;
-use Encore\Admin\Actions\RowAction;
+use Tianc\Admin\Actions\Response;
+use Tianc\Admin\Actions\RowAction;
 use Illuminate\Database\Eloquent\Model;
 
 class Delete extends RowAction

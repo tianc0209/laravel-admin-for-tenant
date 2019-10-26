@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Concerns;
+namespace Tianc\Admin\Grid\Concerns;
 
 use Closure;
-use Encore\Admin\Grid\Tools;
+use Tianc\Admin\Grid\Tools;
 
 trait HasTools
 {

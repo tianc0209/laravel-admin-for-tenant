@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Grid\Concerns;
+namespace Tianc\Admin\Grid\Concerns;
 
-use Encore\Admin\Grid\Column;
-use Encore\Admin\Grid\Model;
-use Encore\Admin\Grid\Tools;
+use Tianc\Admin\Grid\Column;
+use Tianc\Admin\Grid\Model;
+use Tianc\Admin\Grid\Tools;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 

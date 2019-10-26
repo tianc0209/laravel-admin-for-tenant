@@ -1,13 +1,13 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Tianc\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Form\Field\MultipleSelect;
-use Encore\Admin\Form\Field\Select;
-use Encore\Admin\Form\Field\Text;
-use Encore\Admin\Grid;
+use Tianc\Admin\Admin;
+use Tianc\Admin\Form\Field;
+use Tianc\Admin\Form\Field\MultipleSelect;
+use Tianc\Admin\Form\Field\Select;
+use Tianc\Admin\Form\Field\Text;
+use Tianc\Admin\Grid;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 

@@ -3,11 +3,11 @@
 namespace Tests\Controllers;
 
 use App\Http\Controllers\Controller;
-use Encore\Admin\Controllers\ModelForm;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Layout\Content;
+use Tianc\Admin\Controllers\ModelForm;
+use Tianc\Admin\Facades\Admin;
+use Tianc\Admin\Form;
+use Tianc\Admin\Grid;
+use Tianc\Admin\Layout\Content;
 use Tests\Models\File;
 
 class FileController extends Controller

@@ -1,13 +1,13 @@
 <?php
 
-namespace Encore\Admin\Grid\Exporters;
+namespace Tianc\Admin\Grid\Exporters;
 
-use Encore\Admin\Grid;
+use Tianc\Admin\Grid;
 
 abstract class AbstractExporter implements ExporterInterface
 {
     /**
-     * @var \Encore\Admin\Grid
+     * @var \Tianc\Admin\Grid
      */
     protected $grid;
 

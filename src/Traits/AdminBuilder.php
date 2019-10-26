@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Traits;
+namespace Tianc\Admin\Traits;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Tree;
+use Tianc\Admin\Form;
+use Tianc\Admin\Grid;
+use Tianc\Admin\Tree;
 
 /**
  * @deprecated

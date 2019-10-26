@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Actions\Interactor;
+namespace Tianc\Admin\Actions\Interactor;
 
-use Encore\Admin\Admin;
+use Tianc\Admin\Admin;
 
 class Dialog extends Interactor
 {

@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Encore\\Admin\\": "src/"
+            "Tianc\\Admin\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -53,10 +53,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Encore\\Admin\\AdminServiceProvider"
+                "Tianc\\Admin\\AdminServiceProvider"
             ],
             "aliases": {
-                "Admin": "Encore\\Admin\\Facades\\Admin"
+                "Admin": "Tianc\\Admin\\Facades\\Admin"
             }
 
         }

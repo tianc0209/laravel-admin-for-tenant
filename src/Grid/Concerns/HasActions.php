@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Concerns;
+namespace Tianc\Admin\Grid\Concerns;
 
 use Closure;
-use Encore\Admin\Grid;
+use Tianc\Admin\Grid;
 
 trait HasActions
 {

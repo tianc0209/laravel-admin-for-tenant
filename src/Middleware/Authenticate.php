@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Middleware;
+namespace Tianc\Admin\Middleware;
 
 use Closure;
-use Encore\Admin\Facades\Admin;
+use Tianc\Admin\Facades\Admin;
 
 class Authenticate
 {

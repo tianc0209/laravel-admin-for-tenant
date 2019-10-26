@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Tianc\Admin\Form\Field;
 
-use Encore\Admin\Form\Field;
+use Tianc\Admin\Form\Field;
 
 class Nullable extends Field
 {

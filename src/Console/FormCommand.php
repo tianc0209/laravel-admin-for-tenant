@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Console;
+namespace Tianc\Admin\Console;
 
 use Illuminate\Console\GeneratorCommand;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Tianc\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
+use Tianc\Admin\Admin;
 
 class FilterButton extends AbstractTool
 {
@@ -17,7 +17,7 @@ class FilterButton extends AbstractTool
     protected $btnClassName;
 
     /**
-     * @return \Encore\Admin\Grid\Filter
+     * @return \Tianc\Admin\Grid\Filter
      */
     protected function filter()
     {

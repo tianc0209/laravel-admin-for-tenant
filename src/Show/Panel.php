@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Show;
+namespace Tianc\Admin\Show;
 
-use Encore\Admin\Show;
+use Tianc\Admin\Show;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 

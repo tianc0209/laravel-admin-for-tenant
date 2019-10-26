@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Widgets\Navbar;
+namespace Tianc\Admin\Widgets\Navbar;
 
-use Encore\Admin\Admin;
+use Tianc\Admin\Admin;
 use Illuminate\Contracts\Support\Renderable;
 
 /**

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Actions\Interactor;
+namespace Tianc\Admin\Actions\Interactor;
 
-use Encore\Admin\Actions\Action;
+use Tianc\Admin\Actions\Action;
 
 abstract class Interactor
 {

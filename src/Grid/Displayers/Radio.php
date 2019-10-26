@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Tianc\Admin\Grid\Displayers;
 
-use Encore\Admin\Admin;
+use Tianc\Admin\Admin;
 
 class Radio extends AbstractDisplayer
 {

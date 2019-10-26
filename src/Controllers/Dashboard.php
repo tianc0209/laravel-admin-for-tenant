@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Tianc\Admin\Controllers;
 
-use Encore\Admin\Admin;
+use Tianc\Admin\Admin;
 use Illuminate\Support\Arr;
 
 class Dashboard

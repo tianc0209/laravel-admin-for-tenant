@@ -1,15 +1,15 @@
 <?php
 
-namespace Encore\Admin;
+namespace Tianc\Admin;
 
 use Closure;
-use Encore\Admin\Exception\Handler;
-use Encore\Admin\Form\Builder;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Form\HasHooks;
-use Encore\Admin\Form\Layout\Layout;
-use Encore\Admin\Form\Row;
-use Encore\Admin\Form\Tab;
+use Tianc\Admin\Exception\Handler;
+use Tianc\Admin\Form\Builder;
+use Tianc\Admin\Form\Field;
+use Tianc\Admin\Form\HasHooks;
+use Tianc\Admin\Form\Layout\Layout;
+use Tianc\Admin\Form\Row;
+use Tianc\Admin\Form\Tab;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations;
@@ -1476,7 +1476,7 @@ class Form implements Renderable
      *
      * @param Closure $callback
      *
-     * @return \Encore\Admin\Form\Footer
+     * @return \Tianc\Admin\Form\Footer
      */
     public function footer(Closure $callback = null)
     {

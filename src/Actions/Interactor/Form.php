@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Actions\Interactor;
+namespace Tianc\Admin\Actions\Interactor;
 
-use Encore\Admin\Actions\RowAction;
-use Encore\Admin\Admin;
-use Encore\Admin\Form\Field;
+use Tianc\Admin\Actions\RowAction;
+use Tianc\Admin\Admin;
+use Tianc\Admin\Form\Field;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;
 use Illuminate\Validation\ValidationException;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid;
+namespace Tianc\Admin\Grid;
 
-use Encore\Admin\Grid;
-use Encore\Admin\Grid\Exporters\CsvExporter;
+use Tianc\Admin\Grid;
+use Tianc\Admin\Grid\Exporters\CsvExporter;
 
 class Exporter
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Encore\Admin;
+namespace Tianc\Admin;
 
-use Encore\Admin\Show\Divider;
-use Encore\Admin\Show\Field;
-use Encore\Admin\Show\Panel;
-use Encore\Admin\Show\Relation;
+use Tianc\Admin\Show\Divider;
+use Tianc\Admin\Show\Field;
+use Tianc\Admin\Show\Panel;
+use Tianc\Admin\Show\Relation;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

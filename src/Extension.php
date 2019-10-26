@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin;
+namespace Tianc\Admin;
 
-use Encore\Admin\Auth\Database\Permission;
+use Tianc\Admin\Auth\Database\Permission;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Config;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin;
+namespace Tianc\Admin;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Blade;

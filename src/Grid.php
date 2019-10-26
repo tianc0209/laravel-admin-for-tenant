@@ -1,17 +1,17 @@
 <?php
 
-namespace Encore\Admin;
+namespace Tianc\Admin;
 
 use Closure;
-use Encore\Admin\Exception\Handler;
-use Encore\Admin\Grid\Column;
-use Encore\Admin\Grid\Concerns;
-use Encore\Admin\Grid\Displayers;
-use Encore\Admin\Grid\Exporter;
-use Encore\Admin\Grid\Exporters\AbstractExporter;
-use Encore\Admin\Grid\Model;
-use Encore\Admin\Grid\Row;
-use Encore\Admin\Grid\Tools;
+use Tianc\Admin\Exception\Handler;
+use Tianc\Admin\Grid\Column;
+use Tianc\Admin\Grid\Concerns;
+use Tianc\Admin\Grid\Displayers;
+use Tianc\Admin\Grid\Exporter;
+use Tianc\Admin\Grid\Exporters\AbstractExporter;
+use Tianc\Admin\Grid\Model;
+use Tianc\Admin\Grid\Row;
+use Tianc\Admin\Grid\Tools;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\Relations;
 use Illuminate\Support\Collection;
@@ -40,7 +40,7 @@ class Grid
     /**
      * The grid data model instance.
      *
-     * @var \Encore\Admin\Grid\Model|\Illuminate\Database\Eloquent\Builder
+     * @var \Tianc\Admin\Grid\Model|\Illuminate\Database\Eloquent\Builder
      */
     protected $model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Widgets;
+namespace Tianc\Admin\Widgets;
 
 use Illuminate\Support\Fluent;
 

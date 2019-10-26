@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Actions;
+namespace Tianc\Admin\Grid\Actions;
 
-use Encore\Admin\Actions\RowAction;
+use Tianc\Admin\Actions\RowAction;
 
 class Show extends RowAction
 {

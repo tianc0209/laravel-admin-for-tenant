@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Actions;
+namespace Tianc\Admin\Actions;
 
-use Encore\Admin\Grid;
+use Tianc\Admin\Grid;
 use Illuminate\Http\Request;
 
 /**

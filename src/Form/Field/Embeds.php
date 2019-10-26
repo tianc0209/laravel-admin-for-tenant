@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Tianc\Admin\Form\Field;
 
-use Encore\Admin\Form\EmbeddedForm;
-use Encore\Admin\Form\Field;
+use Tianc\Admin\Form\EmbeddedForm;
+use Tianc\Admin\Form\Field;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

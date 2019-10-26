@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Column;
+namespace Tianc\Admin\Grid\Column;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid\Model;
+use Tianc\Admin\Admin;
+use Tianc\Admin\Grid\Model;
 
 class InputFilter extends Filter
 {

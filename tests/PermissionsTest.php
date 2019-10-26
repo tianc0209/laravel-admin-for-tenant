@@ -1,8 +1,8 @@
 <?php
 
-use Encore\Admin\Auth\Database\Administrator;
-use Encore\Admin\Auth\Database\Permission;
-use Encore\Admin\Auth\Database\Role;
+use Tianc\Admin\Auth\Database\Administrator;
+use Tianc\Admin\Auth\Database\Permission;
+use Tianc\Admin\Auth\Database\Role;
 
 class PermissionsTest extends TestCase
 {

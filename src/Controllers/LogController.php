@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Tianc\Admin\Controllers;
 
-use Encore\Admin\Auth\Database\OperationLog;
-use Encore\Admin\Grid;
+use Tianc\Admin\Auth\Database\OperationLog;
+use Tianc\Admin\Grid;
 use Illuminate\Support\Arr;
 
 class LogController extends AdminController

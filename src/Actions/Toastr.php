@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Actions;
+namespace Tianc\Admin\Actions;
 
 use Illuminate\Support\Arr;
 

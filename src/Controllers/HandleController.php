@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Tianc\Admin\Controllers;
 
-use Encore\Admin\Actions\Action;
-use Encore\Admin\Actions\GridAction;
-use Encore\Admin\Actions\Response;
-use Encore\Admin\Actions\RowAction;
-use Encore\Admin\Widgets\Form;
+use Tianc\Admin\Actions\Action;
+use Tianc\Admin\Actions\GridAction;
+use Tianc\Admin\Actions\Response;
+use Tianc\Admin\Actions\RowAction;
+use Tianc\Admin\Widgets\Form;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;

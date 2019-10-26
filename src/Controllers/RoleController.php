@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Tianc\Admin\Controllers;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Show;
+use Tianc\Admin\Form;
+use Tianc\Admin\Grid;
+use Tianc\Admin\Show;
 
 class RoleController extends AdminController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Tianc\Admin\Form\Field;
 
 class Currency extends Text
 {

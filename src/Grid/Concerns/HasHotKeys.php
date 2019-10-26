@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Concerns;
+namespace Tianc\Admin\Grid\Concerns;
 
-use Encore\Admin\Admin;
+use Tianc\Admin\Admin;
 
 trait HasHotKeys
 {

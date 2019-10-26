@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Tianc\Admin\Form;
 
-use Encore\Admin\Form;
+use Tianc\Admin\Form;
 use Illuminate\Contracts\Support\Renderable;
 
 class Row implements Renderable

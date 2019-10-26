@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Tianc\Admin\Form\Field;
 
-use Encore\Admin\Admin;
+use Tianc\Admin\Admin;
 
 class Fieldset
 {

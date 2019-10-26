@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Grid;
+namespace Tianc\Admin\Grid;
 
-use Encore\Admin\Grid\Filter\AbstractFilter;
-use Encore\Admin\Grid\Filter\Layout\Layout;
-use Encore\Admin\Grid\Filter\Scope;
+use Tianc\Admin\Grid\Filter\AbstractFilter;
+use Tianc\Admin\Grid\Filter\Layout\Layout;
+use Tianc\Admin\Grid\Filter\Scope;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;

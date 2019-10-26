@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Tianc\Admin\Form\Field;
 
-use Encore\Admin\Form\NestedForm;
+use Tianc\Admin\Form\NestedForm;
 
 class Table extends HasMany
 {

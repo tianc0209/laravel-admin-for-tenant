@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Tianc\Admin\Grid\Displayers;
 
-use Encore\Admin\Facades\Admin;
+use Tianc\Admin\Facades\Admin;
 
 /**
  * Class Copyable.

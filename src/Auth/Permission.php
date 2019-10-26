@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Auth;
+namespace Tianc\Admin\Auth;
 
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Middleware\Pjax;
+use Tianc\Admin\Facades\Admin;
+use Tianc\Admin\Middleware\Pjax;
 
 class Permission
 {
